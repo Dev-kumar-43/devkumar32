@@ -99,7 +99,10 @@ const SkillBar: React.FC<SkillBarProps> = ({ skill, delay }) => {
         <span className="font-medium">{skill.name}</span>
         <span className="text-sm font-mono text-slate">{skill.proficiency}%</span>
       </div>
-      <Progress value={skill.proficiency} className="h-2" indicatorClassName="bg-highlight" />
+      <Progress 
+        value={skill.proficiency} 
+        className="h-2 bg-secondary"
+      />
     </div>
   );
 };
