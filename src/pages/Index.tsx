@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
@@ -9,9 +8,9 @@ import Certifications from '@/components/Certifications';
 import Skills from '@/components/Skills';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
+import DownloadCode from '@/components/DownloadCode';
 
 const Index = () => {
-  // Handle scroll animations
   useEffect(() => {
     const handleScroll = () => {
       const elements = document.querySelectorAll('.opacity-0');
@@ -27,7 +26,6 @@ const Index = () => {
     };
 
     window.addEventListener('scroll', handleScroll);
-    // Initial check for elements in viewport
     setTimeout(handleScroll, 100);
     
     return () => {
@@ -46,6 +44,7 @@ const Index = () => {
       <Skills />
       <Contact />
       <Footer />
+      <DownloadCode />
     </div>
   );
 };
