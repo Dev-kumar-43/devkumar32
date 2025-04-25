@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowDown } from 'lucide-react';
@@ -39,7 +40,7 @@ const Hero: React.FC = () => {
                   <img 
                     src="/lovable-uploads/0c313d02-5c20-4795-b165-09db54ccd122.png" 
                     alt="Profile" 
-                    className="w-full h-full object-cover object-bottom opacity-80"
+                    className="w-full h-full object-cover object-top opacity-80"
                   />
                 </div>
               </div>
