@@ -37,9 +37,8 @@ const Hero: React.FC = () => {
             <div className="relative">
               <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-highlight/20 p-1">
                 <div className="w-full h-full rounded-full bg-navy overflow-hidden">
-                  {/* Replace with your profile image */}
                   <img 
-                    src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&q=80&w=600&h=600" 
+                    src="/lovable-uploads/0c313d02-5c20-4795-b165-09db54ccd122.png" 
                     alt="Profile" 
                     className="w-full h-full object-cover opacity-80"
                   />
