@@ -23,42 +23,60 @@ const Projects: React.FC = () => {
   const projects: Project[] = [
     {
       id: 1,
-      title: "E-commerce Platform",
-      description: "A fully responsive e-commerce platform with product listings, shopping cart, and secure checkout. Integrated with payment gateway and inventory management.",
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&q=80&w=600",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe API"],
+      title: "Fitness Activity Tracker",
+      description: "A comprehensive web application designed to boost fitness activity tracking with team collaboration features. Includes real-time activity monitoring, team challenges, and progress analytics.",
+      image: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&q=80&w=600",
+      technologies: ["React.js", "Node.js", "MongoDB", "WebSocket"],
       liveLink: "https://example.com",
-      codeLink: "https://github.com/yourusername/project",
+      codeLink: "https://github.com/yourusername/fitness-tracker",
       category: "fullstack"
     },
     {
       id: 2,
-      title: "Task Management Dashboard",
-      description: "An intuitive task management system with drag-and-drop functionality, task prioritization, and team collaboration features.",
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&q=80&w=600",
-      technologies: ["Vue.js", "Firebase", "Tailwind CSS"],
-      liveLink: "https://example.com",
-      codeLink: "https://github.com/yourusername/project",
-      category: "frontend"
+      title: "Java Quiz Platform",
+      description: "An interactive GUI quiz application featuring time-limited questions, multiple view modes, and comprehensive score tracking. Built with Java Swing for a responsive desktop experience.",
+      image: "https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?auto=format&fit=crop&q=80&w=600",
+      technologies: ["Java", "Swing", "AWT"],
+      codeLink: "https://github.com/yourusername/java-quiz",
+      category: "other"
     },
     {
       id: 3,
-      title: "API Gateway Service",
-      description: "A scalable API gateway that handles authentication, rate limiting, and request routing for a microservices architecture.",
-      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=600",
-      technologies: ["Express.js", "Redis", "Docker", "Kubernetes"],
-      codeLink: "https://github.com/yourusername/project",
+      title: "Advanced Antivirus Solution",
+      description: "A sophisticated security tool leveraging VirusTotal API and heuristic analysis to detect malicious files and suspicious behavior patterns in real-time.",
+      image: "https://images.unsplash.com/photo-1563206767-5b18f218e8de?auto=format&fit=crop&q=80&w=600",
+      technologies: ["Python", "VirusTotal API", "ML Analytics"],
+      codeLink: "https://github.com/yourusername/antivirus",
       category: "backend"
     },
     {
       id: 4,
-      title: "Portfolio Website",
-      description: "A responsive portfolio website showcasing professional skills and projects with dark/light mode and animations.",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=600",
-      technologies: ["React", "Three.js", "GSAP", "Tailwind CSS"],
+      title: "E-Learning Platform",
+      description: "A comprehensive educational website supporting multiple courses, interactive class booking, and progress tracking. Features responsive design and intuitive user interface.",
+      image: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?auto=format&fit=crop&q=80&w=600",
+      technologies: ["HTML", "CSS", "JavaScript", "React"],
       liveLink: "https://example.com",
-      codeLink: "https://github.com/yourusername/project",
+      codeLink: "https://github.com/yourusername/elearning",
       category: "frontend"
+    },
+    {
+      id: 5,
+      title: "Hospital Management System",
+      description: "Full-stack solution for hospital data management with CRUD operations, user authentication, and an AI-powered chatbot for patient inquiries using RAG-based QnA system.",
+      image: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=600",
+      technologies: ["React.js", "Node.js", "MongoDB", "Express.js"],
+      liveLink: "https://example.com",
+      codeLink: "https://github.com/yourusername/hospital-management",
+      category: "fullstack"
+    },
+    {
+      id: 6,
+      title: "Secure Chat Application",
+      description: "Advanced messaging platform with adjustable encryption strength based on message sensitivity. Implements multiple encryption algorithms for varying security levels.",
+      image: "https://images.unsplash.com/photo-1587620962725-abab7fe55159?auto=format&fit=crop&q=80&w=600",
+      technologies: ["Python", "AES", "RSA", "Cryptography"],
+      codeLink: "https://github.com/yourusername/secure-chat",
+      category: "backend"
     }
   ];
 
