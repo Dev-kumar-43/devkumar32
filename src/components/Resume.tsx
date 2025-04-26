@@ -1,21 +1,52 @@
-
 import React, { useState } from 'react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Download } from "lucide-react";
+import { Download, Mail, Phone, Linkedin, Github } from "lucide-react";
 
 const Resume: React.FC = () => {
   const [activeTab, setActiveTab] = useState("education");
+  
+  const contactInfo = {
+    email: "devkumarneemrana@gmail.com",
+    phone: "9875769748",
+    linkedin: "https://www.linkedin.com/in/dev-kumar-72ab93251/",
+    github: "https://github.com/Dev-kumar-43"
+  };
+
+  const handleDownloadCV = () => {
+    // Implementation for CV download
+    console.log("Downloading CV...");
+  };
   
   return (
     <section id="resume" className="bg-background">
       <div className="container-inner">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-10">
           <h2 className="section-title mb-4 md:mb-0">Resume</h2>
-          <Button className="flex items-center gap-2 bg-highlight text-navy hover:bg-highlight/90 self-start">
-            <Download size={18} /> Download CV
-          </Button>
+          <div className="space-y-4 md:space-y-0 md:space-x-4">
+            <div className="flex flex-col md:flex-row gap-4 mb-4">
+              <a href={`mailto:${contactInfo.email}`} className="flex items-center gap-2 text-slate hover:text-highlight">
+                <Mail size={18} />
+                <span>{contactInfo.email}</span>
+              </a>
+              <a href={`tel:${contactInfo.phone}`} className="flex items-center gap-2 text-slate hover:text-highlight">
+                <Phone size={18} />
+                <span>{contactInfo.phone}</span>
+              </a>
+              <a href={contactInfo.linkedin} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-slate hover:text-highlight">
+                <Linkedin size={18} />
+                <span>LinkedIn</span>
+              </a>
+              <a href={contactInfo.github} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-slate hover:text-highlight">
+                <Github size={18} />
+                <span>GitHub</span>
+              </a>
+            </div>
+            <Button onClick={handleDownloadCV} className="flex items-center gap-2 bg-highlight text-navy hover:bg-highlight/90">
+              <Download size={18} /> Download CV
+            </Button>
+          </div>
         </div>
         
         <Tabs defaultValue="education" value={activeTab} onValueChange={setActiveTab} className="w-full">
