@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
@@ -9,7 +8,6 @@ import { Mail, Phone, ExternalLink } from 'lucide-react';
 const Contact: React.FC = () => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // In a real implementation, you'd handle the form submission to a backend service
     console.log("Form submitted");
     alert("Thank you for your message! This is a demo form and doesn't actually send messages.");
   };
@@ -34,8 +32,8 @@ const Contact: React.FC = () => {
                 </div>
                 <div>
                   <p className="text-sm text-slate-light">Email</p>
-                  <a href="mailto:your.email@example.com" className="text-white hover:text-highlight transition-colors">
-                    your.email@example.com
+                  <a href="mailto:devkumarneemrana@gmail.com" className="text-white hover:text-highlight transition-colors">
+                    devkumarneemrana@gmail.com
                   </a>
                 </div>
               </div>
@@ -46,8 +44,8 @@ const Contact: React.FC = () => {
                 </div>
                 <div>
                   <p className="text-sm text-slate-light">Phone</p>
-                  <a href="tel:+1234567890" className="text-white hover:text-highlight transition-colors">
-                    +1 (234) 567-890
+                  <a href="tel:9875769748" className="text-white hover:text-highlight transition-colors">
+                    9875769748
                   </a>
                 </div>
               </div>
@@ -59,14 +57,11 @@ const Contact: React.FC = () => {
                 <div>
                   <p className="text-sm text-slate-light">Social</p>
                   <div className="flex gap-4 mt-1">
-                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-highlight transition-colors">
+                    <a href="https://www.linkedin.com/in/dev-kumar-72ab93251/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-highlight transition-colors">
                       LinkedIn
                     </a>
-                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-highlight transition-colors">
+                    <a href="https://github.com/Dev-kumar-43" target="_blank" rel="noopener noreferrer" className="text-white hover:text-highlight transition-colors">
                       GitHub
-                    </a>
-                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-highlight transition-colors">
-                      Twitter
                     </a>
                   </div>
                 </div>
