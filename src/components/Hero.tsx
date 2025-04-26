@@ -18,11 +18,11 @@ const Hero: React.FC = () => {
               <span className="text-gradient">.</span>
             </h1>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate mb-6 opacity-0 animate-fade-in" style={{ animationDelay: '0.6s' }}>
-              I build exceptional digital experiences.
+              Full-Stack Developer
             </h2>
             <p className="text-slate-light text-lg mb-8 max-w-xl opacity-0 animate-fade-in" style={{ animationDelay: '0.8s' }}>
-              I'm a [your profession] specializing in [your specialization]. 
-              Currently, I'm focused on [current focus or project].
+              I'm a full-stack developer specializing in building scalable web applications using modern frameworks like React.js, Node.js, and MongoDB. 
+              Currently, I'm focused on developing innovative full-stack solutions that integrate secure APIs, real-time features, and responsive frontends.
             </p>
             <div className="flex flex-wrap gap-4 opacity-0 animate-fade-in" style={{ animationDelay: '1s' }}>
               <Button asChild className="bg-highlight text-navy hover:bg-highlight/90">
@@ -61,3 +61,4 @@ const Hero: React.FC = () => {
 };
 
 export default Hero;
+
