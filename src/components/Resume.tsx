@@ -27,18 +27,18 @@ const Resume: React.FC = () => {
             <div className="space-y-6">
               {[
                 {
-                  degree: "Master of Science in Computer Science",
-                  institution: "University Name",
-                  period: "2013 - 2015",
-                  description: "Specialized in AI and Machine Learning. Thesis on 'Improving Neural Network Efficiency for Mobile Applications'.",
-                  achievements: ["GPA: 3.85/4.0", "Teaching Assistant for Advanced Algorithms"]
+                  degree: "B.Tech in Computer Science",
+                  institution: "Lovely Professional University",
+                  period: "2022 - 2026",
+                  description: "Comprehensive program covering software development, data structures, algorithms, and system design.",
+                  achievements: ["Active member of the Tech Club", "Participated in various hackathons"]
                 },
                 {
-                  degree: "Bachelor of Science in Software Engineering",
-                  institution: "University Name",
-                  period: "2009 - 2013",
-                  description: "Comprehensive program covering software development lifecycle, data structures, algorithms, and system design.",
-                  achievements: ["Dean's List", "Senior Project: E-commerce Platform"]
+                  degree: "Higher Secondary Education (XII)",
+                  institution: "Suraj School",
+                  period: "2021 - 2022",
+                  description: "Completed higher secondary education with focus on Mathematics and Computer Science.",
+                  achievements: ["School prefect", "Tech Club coordinator"]
                 }
               ].map((edu, index) => (
                 <EducationCard key={index} {...edu} delay={index * 0.2} />

@@ -11,19 +11,19 @@ const About: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <p className="text-lg mb-6 opacity-0 animate-slide-up">
-              Hello! I'm [Your Name], a passionate [Your Profession] with [X years] of experience in [Your Field]. 
-              I specialize in [Your Specializations], developing solutions that [brief description of what you do].
+              Hello! I'm Dev Kumar, a passionate Full-Stack Developer with 2+ years of experience in web development and scalable application design. 
+              I specialize in MERN stack (MongoDB, Express.js, React.js, Node.js), developing solutions that blend seamless front-end interfaces with powerful back-end systems.
             </p>
             
             <p className="text-lg mb-6 opacity-0 animate-slide-up" style={{ animationDelay: '0.2s' }}>
-              My journey in [Your Field] began when [brief story about how you started]. Since then, 
-              I've worked on [types of projects/products] for [types of clients/companies], always 
-              striving to [your approach or philosophy].
+              My journey in development began when I discovered a love for solving real-world problems through code. Since then, 
+              I've worked on diverse projects ranging from e-learning platforms and hospital management systems to secure encrypted QR code systems and interactive games, 
+              always striving to create reliable, secure, and user-friendly solutions.
             </p>
             
             <p className="text-lg opacity-0 animate-slide-up" style={{ animationDelay: '0.4s' }}>
-              Beyond technical skills, I value [your professional values, e.g., collaboration, innovation, user-centric design]. 
-              I believe that [your professional philosophy or approach to work].
+              Beyond technical skills, I value collaboration, innovation, and continuous learning. 
+              I believe that great software is built not just with code, but with empathy, curiosity, and a passion for creating impact.
             </p>
           </div>
           

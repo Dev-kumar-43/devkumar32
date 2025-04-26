@@ -1,56 +1,41 @@
-
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { ExternalLink } from 'lucide-react';
 
-interface Certification {
-  id: number;
-  title: string;
-  issuer: string;
-  date: string;
-  description: string;
-  credentialLink?: string;
-  badgeImage?: string;
-}
-
 const Certifications: React.FC = () => {
-  const certifications: Certification[] = [
+  const certifications = [
     {
       id: 1,
-      title: "AWS Certified Solutions Architect",
-      issuer: "Amazon Web Services",
-      date: "October 2023",
-      description: "Comprehensive understanding of AWS architecture best practices and services for designing and deploying scalable systems.",
-      credentialLink: "https://example.com/credential",
-      badgeImage: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=crop&q=80&w=300"
+      title: "Getting Started with AI and Machine Learning",
+      issuer: "LinkedIn",
+      date: "Nov 2023 - Dec 2023",
+      description: "Comprehensive understanding of AI and ML fundamentals, including practical implementation and best practices.",
+      credentialLink: "https://example.com/credential"
     },
     {
       id: 2,
-      title: "Professional Scrum Master I",
-      issuer: "Scrum.org",
-      date: "July 2022",
-      description: "Certified in Scrum methodology implementation, project management, and agile practices.",
-      credentialLink: "https://example.com/credential",
-      badgeImage: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&q=80&w=300"
+      title: "Programming using Java",
+      issuer: "Cipher Schools",
+      date: "Jun 2024 - Jul 2024",
+      description: "Advanced Java programming concepts, including OOP, multithreading, and GUI development.",
+      credentialLink: "https://example.com/credential"
     },
     {
       id: 3,
-      title: "Google Cloud Professional Data Engineer",
-      issuer: "Google Cloud",
-      date: "May 2023",
-      description: "Ability to design, build, and maintain data processing systems with a focus on security and scalability.",
-      credentialLink: "https://example.com/credential",
-      badgeImage: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&q=80&w=300"
+      title: "Generative AI with Large Language Models",
+      issuer: "Coursera",
+      date: "Nov 2023 - Dec 2023",
+      description: "Deep dive into LLM architecture, training, and implementation strategies.",
+      credentialLink: "https://example.com/credential"
     },
     {
       id: 4,
-      title: "Microsoft Certified: Azure Developer Associate",
-      issuer: "Microsoft",
-      date: "January 2023",
-      description: "Skills in designing, building, testing, and maintaining cloud applications on Microsoft Azure.",
-      credentialLink: "https://example.com/credential",
-      badgeImage: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&q=80&w=300"
+      title: "Ethical Hacking Essentials",
+      issuer: "Coursera",
+      date: "Dec 2024 - Jan 2025",
+      description: "Comprehensive training in cybersecurity principles and ethical hacking methodologies.",
+      credentialLink: "https://example.com/credential"
     }
   ];
 

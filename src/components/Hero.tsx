@@ -1,8 +1,6 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowDown } from 'lucide-react';
-import { cn } from '@/lib/utils';
 
 const Hero: React.FC = () => {
   return (
@@ -14,7 +12,7 @@ const Hero: React.FC = () => {
               Hi there, I'm
             </p>
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-4 opacity-0 animate-fade-in" style={{ animationDelay: '0.4s' }}>
-              <span className="text-foreground">Your Full Name</span>
+              <span className="text-foreground">Dev Kumar</span>
               <span className="text-gradient">.</span>
             </h1>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate mb-6 opacity-0 animate-fade-in" style={{ animationDelay: '0.6s' }}>
@@ -61,4 +59,3 @@ const Hero: React.FC = () => {
 };
 
 export default Hero;
-
