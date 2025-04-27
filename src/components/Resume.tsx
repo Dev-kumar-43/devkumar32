@@ -1,16 +1,27 @@
+
 import React, { useState } from 'react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Download } from "lucide-react";
+import { useToast } from "@/hooks/use-toast";
 
 const Resume: React.FC = () => {
   const [activeTab, setActiveTab] = useState("education");
+  const { toast } = useToast();
   
   const handleDownloadCV = () => {
-    // Implementation for CV download (left as a placeholder)
-    console.log("Downloading CV...");
-    // You might want to add actual CV download logic here in the future
+    const link = document.createElement('a');
+    link.href = '/lovable-uploads/6583728e-3390-46d7-880e-a445e650ad22.png';
+    link.download = 'Dev_Kumar_Resume.png';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    
+    toast({
+      title: "Download Started",
+      description: "Your CV is being downloaded.",
+    });
   };
   
   return (
