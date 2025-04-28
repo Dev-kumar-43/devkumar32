@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Progress } from '@/components/ui/progress';
 import { Card } from '@/components/ui/card';
@@ -24,16 +23,11 @@ const Skills: React.FC = () => {
     { name: "Node.js", proficiency: 85, category: "frameworks" },
     { name: "Express.js", proficiency: 80, category: "frameworks" },
     { name: "Next.js", proficiency: 75, category: "frameworks" },
-    { name: "Django", proficiency: 70, category: "frameworks" },
-    { name: "Vue.js", proficiency: 65, category: "frameworks" },
     
     // Tools/Platforms
     { name: "Git", proficiency: 90, category: "tools" },
-    { name: "Docker", proficiency: 80, category: "tools" },
     { name: "AWS", proficiency: 75, category: "tools" },
-    { name: "CI/CD", proficiency: 80, category: "tools" },
     { name: "MongoDB", proficiency: 85, category: "tools" },
-    { name: "PostgreSQL", proficiency: 80, category: "tools" },
     
     // Soft Skills
     { name: "Problem Solving", proficiency: 95, category: "soft" },
